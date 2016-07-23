@@ -2,6 +2,10 @@
 	border: 1px dashed blue;
 }*/
 
+body {
+	font: arial, sans-serif;
+}
+
 div {
 	display: block;
 	text-align: center;
@@ -9,13 +13,55 @@ div {
 
 .header {
 	text-align: right;
+	font-size: small;
+}
+
+ul {
+	margin-left: -35px;
 }
 
 li {
 	display: inline;
+	margin-right: 10px;
 }
+
+a:link {
+	text-decoration: none;
+	color: #000;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:visited {
+	color: #000;
+}
+
+.lower {
+	height: 100%;
+	position: relative;
+}
+
+.logo_cnt {
+	height: 200px;
+	margin-top: 50px;
+}
+
+#logo {
+	margin: 50px;
+}
+
+.search_form {
+
+}
+
 .footer {
-	clear: both;
+	bottom: 0;
+	background-color: #F2F2F2;
+	height: 50px;
+	margin-top: 300px;
+	font-size: small;
 }
 
 #left_foot {
