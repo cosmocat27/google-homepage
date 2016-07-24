@@ -2,8 +2,15 @@
 	border: 1px dashed blue;
 }*/
 
+html {
+	height: 98.5%;
+	min-height: 490px;
+}
+
 body {
 	font: arial, sans-serif;
+	height: 98.5%;
+	position: relative;
 }
 
 div {
@@ -12,17 +19,27 @@ div {
 }
 
 .header {
-	text-align: right;
-	font-size: small;
+	font-size: 12px;
+	height: 50px;
 }
 
 ul {
-	margin-left: -35px;
+	margin: 0 0 0 -35px;
+	float: right;
 }
 
 li {
-	display: inline;
-	margin-right: 10px;
+	display: inline-block;
+	margin: 0 10px 0 10px;
+	height: 100%;
+}
+
+#gmail_link {
+	margin: 0 10px 0 0;
+}
+
+#images_link {
+	margin: 0;
 }
 
 a:link {
@@ -38,36 +55,81 @@ a:visited {
 	color: #000;
 }
 
-.lower {
-	height: 100%;
-	position: relative;
+#apps {
+	display: inline-block;
+	width: 25px;
+	height: 25px;
+	background-image: url('http://ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+	background-position: -134px -40px;
+	margin: 8px 0 -8px 0;
+}
+
+#sign_in {
+	background-color: #4387fd;
+	display: inline-block;
+	width: 70px;
+	margin: 0 20px 0 0;
+	padding: 8px 0 7px 0;
+}
+
+#sign_in_link {
+	color: #fff;
+	font-weight: bold;
+}
+
+#sign_in_link:hover {
+	text-decoration: none;
 }
 
 .logo_cnt {
-	height: 200px;
-	margin-top: 50px;
+	height: 180px;
+	margin-top: 80px;
 }
 
 #logo {
-	margin: 50px;
+	margin: 60px;
 }
 
 .search_form {
 
 }
 
+.search_input {
+	height: 35px;
+	width: 470px;
+	margin-bottom: 30px;
+}
+
+.button {
+	height: 32px;
+	width: 150px;
+}
+
 .footer {
 	bottom: 0;
+	position: absolute;
+	width: 98%;
+	min-width: 950px;
+	height: 45px;
 	background-color: #F2F2F2;
-	height: 50px;
-	margin-top: 300px;
-	font-size: small;
+	font-size: 12px;
 }
 
 #left_foot {
 	float: left;
+	margin-top: 13px;
+	left-margin: 20px;
 }
 
 #right_foot {
 	float: right;
+	margin-top: 13px;
+}
+
+.footer a:visited {
+	color: #666;
+}
+
+.footer a:link {
+	color: #666;
 }
